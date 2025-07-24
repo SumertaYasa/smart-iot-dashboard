@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import { MapPin, Car, Users } from "lucide-react";
 
 export default function Information_spot() {
   return (
     <div className="flex flex-col md:flex-row gap-[10px]">
       {/* Total spots */}
-      <motion.div
+      <Motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
@@ -18,9 +18,9 @@ export default function Information_spot() {
           <MapPin className="text-[20px]" />
         </div>
         <span className="text-[24px] md:text-4xl font-semibold">6</span>
-      </motion.div>
+      </Motion.div>
       {/* Occupied */}
-      <motion.div
+      <Motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.5 }}
@@ -33,9 +33,9 @@ export default function Information_spot() {
         <span className="text-[24px] md:text-4xl font-semibold text-red-500">
           3
         </span>
-      </motion.div>
+      </Motion.div>
       {/* Available */}
-      <motion.div
+      <Motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
@@ -48,7 +48,7 @@ export default function Information_spot() {
         <span className="text-[24px] md:text-4xl font-semibold text-green-500">
           3
         </span>
-      </motion.div>
+      </Motion.div>
     </div>
   );
 }

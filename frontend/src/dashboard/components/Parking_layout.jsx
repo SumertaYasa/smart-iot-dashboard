@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 export default function Parking_layout() {
   return (
-    <motion.div
+    <Motion.div
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, delay: 0.2 }}
@@ -27,6 +27,6 @@ export default function Parking_layout() {
           })}
         </div>
       </div>
-    </motion.div>
+    </Motion.div>
   );
 }
